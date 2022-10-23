@@ -4,3 +4,10 @@ build
 dist
 __pycache__
 cache
+
+# newly added
+align_result_EN-US/
+align_result_FR/
+align_result_IT/
+model_fine_tune/
+
