@@ -6,8 +6,20 @@ __pycache__
 cache
 
 # newly added
+align_data_EN-US/
+align_data_FR/
+align_data_IT/
+align_data_ft_EN-US/
+align_data_ft_FR/
+align_data_ft_IT/
+align_result_ft_EN-US/
+align_result_ft_FR/
+align_result_ft_IT/
 align_result_EN-US/
 align_result_FR/
 align_result_IT/
-model_fine_tune/
 
+model_fine_tune/
+model_fine_tune_EN-US_01/
+model_fine_tune_FR_02/
+model_fine_tune_IT_03/

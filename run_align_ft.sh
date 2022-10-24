@@ -5,10 +5,10 @@ for lang in EN-US FR IT
 do
     for data_set in test dev
     do
-        mkdir -p align_result_$lang
+        mkdir -p align_result_ft_$lang
         DATA_FILE=../jobad_data/fast_align_data_$lang/$data_set.txt
-        MODEL_NAME_OR_PATH=bert-base-multilingual-cased
-        OUTPUT_FILE=align_data_$lang/$data_set.align
+        MODEL_NAME_OR_PATH=model_fine_tune_IT_03
+        OUTPUT_FILE=align_data_ft_$lang/$data_set.align
         CUDA_VISIBLE_DEVICES=0 awesome-align \
             --output_file=$OUTPUT_FILE \
             --model_name_or_path=$MODEL_NAME_OR_PATH \
@@ -23,7 +23,7 @@ done
 #
 #DATA_FILE=../jobad_data/fast_align_data_EN-US/test.txt
 #MODEL_NAME_OR_PATH=bert-base-multilingual-cased
-#OUTPUT_FILE=align_result_EN-US/test.align
+#OUTPUT_FILE=align_data_EN-US/test.align
 #
 #CUDA_VISIBLE_DEVICES=0 awesome-align \
 #    --output_file=$OUTPUT_FILE \
